@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SkibinskyFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextViewStyle"
+            android:gravity="top"
+            android:text="Циркулярно-респираторный коэффициент Скибински ">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            style="@style/TextViewStyle"
+            android:text="Определяет резервы и выносливость дыхательной и сердечно-сосудистой систем">
+        </TextView>
+        <EditText
+            android:id="@+id/editTextLungCapacity"
+            android:hint="Жизненная емкость легких (мл)"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            style="@style/EditTextStyle">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextHeartBeats"
+            android:hint="Частота сердечных сокращений (уд/мин)"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            style="@style/EditTextStyle">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextShtange"
+            android:hint="Проба Штанге (с)"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            style="@style/EditTextStyle">
+        </EditText>
+
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_500"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Продолжить">
+        </Button>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

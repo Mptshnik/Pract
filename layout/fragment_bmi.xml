@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BMIFragment">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+       style="@style/TextViewStyle"
+        android:text="Индекс массы тела"
+        android:textAlignment="center"
+        android:layout_gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/TextViewStyle"
+        android:text="@string/description_bmi_fragment"
+        android:textSize="22sp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="match_parent"
+        style="@style/EditTextStyle"
+        android:textSize="25sp"
+        android:inputType="number"
+        android:hint="Ваш рост (см)">
+    </EditText>
+
+    <EditText
+        android:textSize="25sp"
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        style="@style/EditTextStyle"
+        android:inputType="number"
+        android:hint="Ваш вес (кг)">
+    </EditText>
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_500"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Продолжить">
+
+    </Button>
+</LinearLayout>
+
+</FrameLayout>

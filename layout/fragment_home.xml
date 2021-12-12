@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/Title"
+            style="@style/TextViewStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/home_title">
+        </TextView>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Title">
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="8 показателей">
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:src="@drawable/gerb">
+            </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/heart">
+            </ImageView>
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:text="+"
+                android:textSize="70sp"></TextView>
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/airlogo">
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/plus"
+            style="@style/TextViewStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout2"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="70sp"/>
+        <TextView
+android:id="@+id/bmi"
+            android:layout_width="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/plus"
+            android:layout_height="wrap_content"
+            android:text="BMI"
+            android:textColor="@color/orange"
+            android:textSize="50sp"/>
+
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_500"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="Продолжить"
+            app:layout_constraintTop_toBottomOf="@+id/bmi">
+        </Button>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
